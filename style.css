@@ -46,6 +46,33 @@ header {
 .hero__content {
   display: flex;
 }
+.hero__right{
+  position: relative;
+}
+.hero__circle{
+  position: absolute;
+  z-index: -1;
+
+  bottom: 0%;
+  right: -30%;
+
+}
+.hero__chopstick,
+.hero__sugar{
+position: absolute;
+}
+.hero__chopstick{
+  bottom: 0;
+  right: 15%;
+}
+.hero__sugar{
+  top: 14%;
+  right: -20%;
+}
+
+.hero {
+  overflow: hidden;
+}
 .hero__left h1 {
   font-size: 72px;
   font-family: "Alice", sans-serif;
@@ -338,4 +365,65 @@ color: #000 !important;
     width: 90px;
     height: 25px;
   }
+}
+@media (max-width: 1024px) {
+  .hero_left_top h1 {
+    font-size: 56px;
+  }
+
+  .hero__desc {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .hero_left_bottom {
+    width: 414px;
+    height: 100px;
+    margin-top: 82px;
+    padding: 16px;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hero_left_bottom h3 {
+    font-size: 24px;
+  }
+
+  .hero_left_bottom p {
+    font-size: 18px;
+  }
+
+  .hero__bibimbap {
+    width: 326px;
+    height: 326px;
+    position: relative;
+    left: -19%;
+  }
+
+  .hero__circle {
+    width: 478px;
+  }
+
+  .hero__chopstick {
+    width: 392px;
+    height: 228px;
+  }
+
+  .hero__sugar {
+    top: 2%;
+    right: -9%;
+  }
+}
+@media (max-width:900px) {
+  .footer__img {
+    width: 100px;
+    height: 50px;
+  }
+ .footer {
+  gap: 30px;
+ }
+ .one__kolonka p {
+  width: 240px;
+}
 }
